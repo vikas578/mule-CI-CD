@@ -24,7 +24,7 @@ http://www.mulesoft.org/schema/mule/sockets http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 payload map ( payload01 , indexOfPayload01 ) -> {
-	ID: payload01.ID,
+	CID: payload01.ID,
 	code: (payload01.code1 default "") ++ (payload01.code2 default ""),
 	price: payload01.price default 0,
 	origin: payload01.fromAirport default "",
